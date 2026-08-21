@@ -1,1 +1,1 @@
-A simple consodl ToDo app using Dart
+## A simple console TODO app using Dart. ##
