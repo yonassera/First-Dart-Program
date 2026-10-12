@@ -45,6 +45,10 @@ void addTask(String task) {
 }
 
 void removeTask(int id) {
+  if(!tasks.any((task) => task["id"] == id)) {
+    print("\n Id doesn't exist. \n");
+    return;
+  }
   tasks = tasks.where((task) => task["id"] != id).toList();
   print("\n Successfully removed \n");
 }
